@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matt R. Sherman CV Professionnel</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --text: #2c3e50;
+            --background: #f5f6fa;
+            --card: #ffffff;
+            --accent: #e74c3c;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 2rem;
+        }
+
+        .cv-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: var(--card);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid var(--secondary);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .contact-info a {
+            color: var(--secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: var(--accent);
+        }
+
+        section {
+            margin-bottom: 2rem;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h2 {
+            color: var(--primary);
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--secondary);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .skill-category {
+            background: rgba(52, 152, 219, 0.1);
+            padding: 1rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .skill-category:hover {
+            transform: translateY(-5px);
+        }
+
+        .skill-category h3 {
+            color: var(--secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .skill-category ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-top: 0.5rem;
+        }
+        
+        .skill-category li {
+            margin-bottom: 0.5rem;
+            line-height: 1.4;
+        }
+
+        .project {
+            margin-bottom: 1rem;  
+            padding: 0.75rem;     
+            background: rgba(52, 152, 219, 0.05);
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            font-size: 0.95rem;   
+        }
+
+        .project h3 {
+            color: var(--secondary);
+            margin-bottom: 0.25rem;  
+            font-size: 1.1rem;       
+        }
+
+        .project ul {
+            margin: 0.5rem 0;        
+            padding-left: 1.25rem;   
+        }
+
+        .project li {
+            margin-bottom: 0.25rem;   
+            line-height: 1.4;        
+        }
+
+        .project p {
+            margin-bottom: 0.25rem;   
+        }
+
+        .date {
+            color: var(--accent);
+            font-size: 0.85rem;       
+            margin-bottom: 0.25rem;   
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 1rem;
+            }
+
+            .cv-container {
+                padding: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        #awards ul {
+            list-style-type: none;
+            margin-left: 0;
+            padding-left: 0;
+        }
+
+        #awards li {
+            margin-bottom: 0.8rem;
+            padding-left: 1rem;
+            border-left: 3px solid var(--secondary);
+        }
+
+        #awards h3 {
+            margin-top: 1.5rem;
+            color: var(--secondary);
+        }
+    </style>
+</head>
+<body>
+    <div class="cv-container">
+        <header>
+            <h1>Matt R. Sherman</h1>
+            <div class="contact-info">
+                <a href="mailto:matt@mattRsherman.com">Matt@MattRSherman.com</a>
+                <span>|</span>
+                <a href="tel:+15148157865">+1 (514)-815-7865</a>
+                <span>|</span>
+                <a href="https://www.imdb.com/name/nm3520190/" target="_blank" rel="noopener noreferrer">Profil IMDB</a>
+            </div>
+            <p>109 Ch des Loyalistes, Stukely-Sud, QC, J0E 2J0</p>
+        </header>
+
+        <section id="professional-summary">
+            <h2>Sommaire Professionnel</h2>
+            <p>Superviseur sonore senior et propriétaire/exploitant avec 17 ans d'expérience dans la direction de la production et post-production audio pour des projets de films, de télévision et de jeux vidéo. Expertise approfondie dans des environnements de production et de post-production à enjeux élevés. A excellé sur des plateaux de tournage à rythme rapide, gérant des exigences audio complexes tout en collaborant avec de grandes équipes de professionnels techniques et créatifs. Cherche à mettre à profit une vaste expérience en gestion d'équipe et en développement technique dans un rôle en entreprise. A collaboré directement avec les réalisateurs et les équipes créatives pour concrétiser des visions artistiques tout en gérant l'exécution technique et l'allocation des ressources.</p>
+        </section>
+
+        <section id="professional-experience">
+            <h2>Expérience Professionnelle</h2>
+            <div class="project">
+                <h3>Superviseur Montage Sonore | Production & Mixage de Réenregistrement</h3>
+                <div class="date">📍 2008 – Présent</div>
+                <ul>
+                    <li>Direction des départements sonores pour films, télévision et jeux vidéo</li>
+                    <li>Gestion de la post-production sonore, incluant montage dialogue, ADR, effets sonores et mixage final</li>
+                    <li>Supervision et coordination d'équipes, assurant une conception sonore cohérente</li>
+                    <li>Expert en montage et mixage dialogue, spécialisé en amélioration cinématographique</li>
+                    <li>Développement de techniques ADR pour intégration transparente avec le dialogue de production</li>
+                    <li>Orchestration de flux de travail sonores avec équipes internationales</li>
+                    <li>Livraison audio de qualité diffusion pour réseaux TV majeurs et plateformes de streaming</li>
+                    <li>Gestion d'installations de studio d'enregistrement et maintenance technique</li>
+                    <li>Innovation en flux de travail d'enregistrement à distance pendant la pandémie</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="technical-skills">
+            <h2>Compétences Techniques</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>🎧 Conception & Intégration Audio</h3>
+                    <ul>
+                        <li><strong>Supervision & Conception Sonore</strong> – Montage et mixage dialogue, Création sonore originale & Bruitage, Mixage de réenregistrement pour films, TV et jeux</li>
+                        <li><strong>Logiciels</strong> – Pro Tools (Expert), Reaper, Unreal Engine, Unity, Wwise, FMOD</li>
+                        <li><strong>Programmation Audio</strong> – Audio spatial, Programmation MIDI, Dolby Atmos, Son surround</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>🎛️ Outils & Équipements Audio</h3>
+                    <ul>
+                        <li><strong>Logiciels</strong> – Pro Tools, Reaper, Avid, Unreal Blueprints, Outils audio Unreal</li>
+                        <li><strong>Matériel</strong> – Grande expérience avec équipements professionnels d'enregistrement, mixage et mastering</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>🎬 Montage Vidéo & Post-Production</h3>
+                    <ul>
+                        <li><strong>Logiciels</strong> – DaVinci Resolve (montage, étalonnage, effets Fusion)</li>
+                        <li><strong>Compétences</strong> – Montage multicaméra, graphiques animés, synchronisation audio, montage linéaire</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>📽️ Production Virtuelle & Cinématographie</h3>
+                    <ul>
+                        <li><strong>Unreal Engine</strong> – Repérage virtuel, flux de travail prévis & techvis, visualisation en temps réel</li>
+                        <li><strong>Capture de Mouvement</strong> – Intégration LiveLink, Move.ai, conception de décors virtuels, optimisation</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>📊 Systèmes Administratifs & d'Entreprise</h3>
+                    <ul>
+                        <li><strong>Gestion de Projet</strong> – Trello, Excel, Jira, Asana, Slack</li>
+                        <li><strong>Outils Collaboratifs</strong> – Zoom, Teams, Google Workspace, Suite Adobe Creative</li>
+                        <li><strong>En Apprentissage</strong> – Salesforce CRM</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>🤖 IA & Apprentissage Machine</h3>
+                    <ul>
+                        <li><strong>Outils IA</strong> – Développement assisté par IA, génération d'images par IA, déploiement LLM (Ollama, llama.cpp)</li>
+                        <li><strong>Ingénierie de Prompts</strong> – Optimisation des flux de travail IA pour tâches de développement</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>🎮 Développement de Jeux</h3>
+                    <ul>
+                        <li><strong>Moteurs</strong> – Unreal Engine (Blueprints, Séquençage, Animation), Unity</li>
+                        <li><strong>Programmation de Base</strong> – C#, C++, Intégration audio de jeu</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>💻 Programmation & Technologies Web</h3>
+                    <ul>
+                        <li><strong>Langages</strong> – HTML, CSS, JavaScript, Python (scripts de base)</li>
+                        <li><strong>Outils de Développement</strong> – Git, GitHub Copilot, VS Code, intégration API, Firebase</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>🛠️ Outils & Plateformes</h3>
+                    <ul>
+                        <li><strong>Logiciels & Plateformes</strong> – Git, Unreal Engine 5.5, Pro Tools, Dolby Atmos/Surround</li>
+                        <li><strong>Matériel</strong> – Compétent dans l'utilisation d'équipements professionnels vidéo et son de toutes marques principales</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="key-projects">
+            <h2>Projets Clés</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <h3>The Sacrifice Game (Long Métrage)</h3>
+                    <div class="date">2023</div>
+                    <p>Superviseur Son & Mixeur de Réenregistrement | Production Originale Shudder</p>
+                    <ul>
+                        <li>Supervision complète du montage sonore et réalisation du mixage final 5.1 aux Studios MELS Montréal pour ce film d'horreur acclamé</li>
+                        <li>Organisation et orchestration de sessions ADR à distance à travers plusieurs pays</li>
+                        <li>Collaboration étroite avec la réalisatrice Jenn Wexler pour créer une conception sonore unique soutenant l'ambiance des années 1970 et les éléments d'horreur</li>
+                        <li>Le film a gagné une reconnaissance significative comme film d'horreur de Noël incontournable</li>
+                        <li>Première au Festival International Fantasia et sortie sur la plateforme Shudder</li>
+                        <li>Travail avec une distribution talentueuse incluant Mena Massoud (Aladdin) et Olivia Scott Welch (Fear Street)</li>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <h3>Productions Commerciales, Gouvernementales et Films Indépendants</h3>
+                    <div class="date">Projets Divers</div>
+                    <p>Concepteur Sonore & Spécialiste de Production Audio | Grandes Marques & Institutions</p>
+                    <ul>
+                        <li>Supervision sonore pour de nombreux longs métrages financés par la SODEC et Téléfilm Canada</li>
+                        <li>Collaboration avec l'Office National du Film du Canada (ONF) sur diverses productions</li>
+                        <li>Production et post-production sonore complète pour courts métrages, longs métrages et séries web indépendants</li>
+                        <li>Production audio de haute qualité pour grandes marques internationales incluant McDonald's, Subway, LNH, Pepsi, Jeux Olympiques, Puma, Fondation Bill & Melinda Gates</li>
+                        <li>Direction de la production audio et enregistrements de véhicules pour plusieurs campagnes publicitaires automobiles</li>
+                        <li>Maintien d'une qualité audio constante sur multiples plateformes médiatiques</li>
+                        <li>Collaboration avec directeurs créatifs et équipes de production pour atteindre les objectifs de messagerie de marque</li>
+                        <li>Respect des délais serrés tout en livrant de l'audio de qualité diffusion pour campagnes nationales</li>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <h3>Production Audio Sports Professionnels</h3>
+                    <div class="date">Multiples Saisons</div>
+                    <p>Preneur de Son | Divertissement Sportif</p>
+                    <ul>
+                        <li>Preneur de son principal pigiste pour l'équipe de hockey des Canadiennes de Montréal</li>
+                        <li>Collaboration directe avec les joueuses pour entrevues et contenu promotionnel</li>
+                        <li>Mixage de plusieurs saisons de "Trajectoires" pour RDS</li>
+                        <li>Développement de techniques spécialisées pour la captation audio en environnement de patinoire</li>
+                        <li>Livraison de contenu audio de haute qualité en conditions sportives exigeantes</li>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <h3>Mona xx Lights</h3>
+                    <div class="date">Superviseur Son & Programmeur Audio</div>
+                    <p>Projet Cinéma RV Innovant | Développement Long Métrage</p>
+                    <ul>
+                        <li>Direction de l'innovation audio pour un projet cinématographique RV d'avant-garde</li>
+                        <li>En développement comme long métrage avec Elijah Wood attaché au projet</li>
+                        <li>Supervision et conception de tous les aspects sonores pour l'expérience RV prototype</li>
+                        <li>Intégration d'éléments audio avancés et programmation audio dans Unreal Engine</li>
+                        <li>Développement de solutions audio spatiales pour améliorer l'immersion narrative</li>
+                        <li>Organisation et supervision d'enregistrements ADR internationaux incluant performances musicales</li>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <h3>Jeux AAA et Bandes-annonces</h3>
+                    <div class="date">Concepteur Sonore & Mixeur</div>
+                    <ul>
+                        <li>Travail sur des jeux AAA incluant Journey to the Savage Planet, Assassin's Creed, For Honor et plusieurs titres à venir</li>
+                        <li>Capture de dialogue en tant que pigiste résident lors des sessions de capture de mouvement chez Beyond Capture</li>
+                        <li>Collaboration avec Krafton, Capcom, Dneg, Wizards of the Coast et Ubisoft</li>
+                        <li>Technicien son sur appel pour Beyond Capture, devenu rapidement un atout pour l'équipe</li>
+                        <li>Livraison de travail audio de haute qualité aligné avec la narration, le gameplay et les visuels cinématiques</li>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <h3>Wrench - Assistant Automobile IA</h3>
+                    <div class="date">2024 – Présent (En Développement)</div>
+                    <p>Fondateur & Créateur | Directeur Technique</p>
+                    <ul>
+                        <li>Développement d'un assistant SaaS propulsé par l'IA, conçu spécifiquement pour les passionnés de voitures anciennes et mécaniciens indépendants</li>
+                        <li>Construit sur l'infrastructure Hugging Face avec prompts personnalisés pour connaissances automobiles</li>
+                        <li>Création d'une base de données complète de spécifications, problèmes communs et procédures de réparation</li>
+                        <li>Implémentation de traitement du langage naturel pour interpréter les requêtes techniques</li>
+                        <li>Interface conviviale rendant l'information automobile complexe accessible aux novices et experts</li>
+                        <li>Modèle d'affaires par abonnement avec différents niveaux d'accès</li>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <h3>Barcode Masters</h3>
+                    <p>Créateur & Développeur Solo | Projet Personnel</p>
+                    <div class="date">Janvier 2024 – Présent (En Développement)</div>
+                    <p>Développeur de Jeux & Logiciels & Spécialiste IA</p>
+                    <ul>
+                        <li>Développement d'un jeu web interactif où les joueurs scannent des codes-barres pour créer des monstres</li>
+                        <li>Implémentation d'un modèle d'abonnement à plusieurs niveaux avec fonctionnalités premium</li>
+                        <li>Utilisation de Firebase pour l'authentification, le stockage et la gestion des abonnements</li>
+                        <li>Optimisation du développement avec outils IA pour la génération de code</li>
+                        <li>Interface responsive avec support mode clair/sombre</li>
+                        <li>Intégration de génération d'images par IA via API Hugging Face</li>
+                    </ul>
+                </div>
+
+                <div class="project">
+                    <h3>Environnement de Développement LLM Local</h3>
+                    <div class="date">2024-Présent</div>
+                    <p>Développeur Infrastructure IA</p>
+                    <ul>
+                        <li>Configuration et optimisation d'environnement LLM local utilisant Ollama et llama.cpp</li>
+                        <li>Implémentation de workflows de déploiement personnalisés pour CodeLlama, Mistral et autres modèles</li>
+                        <li>Développement de prompts personnalisés pour tâches de développement spécifiques</li>
+                        <li>Intégration API pour interaction transparente entre LLMs locaux et outils de développement</li>
+                        <li>Technologies: Ollama, llama.cpp, Python, Format GGUF, Quantification de Modèles, APIs REST</li>
+                    </ul>
+                </div>
+
+                <!-- Would you like me to continue with the Awards & Recognition, Education, and Additional Skills sections? -->
+            </div>
+        </section>
+
+        <section id="awards">
+            <h2>Prix & Reconnaissance</h2>
+            <div class="project">
+                <h3>Reconnaissance de l'Industrie</h3>
+                <ul>
+                    <li><strong>Plateforme Soundly Sound Effects</strong> - Porte-parole officiel et ambassadeur</li>
+                    <li><strong>Massive Meter Bridge</strong> - Critique et témoignage en vedette - <a href="https://evergreen.audio/blogs/artists-engineers/matt-sherman" target="_blank" rel="noopener noreferrer">Lire la Critique</a></li>
+                </ul>
+
+                <h3>Prix de Conception Sonore</h3>
+                <p>8 Prix & 6 Nominations dans des festivals internationaux</p>
+                <ul>
+                    <li><strong>International Gold Awards (2023)</strong> - Prix d'Argent pour Meilleure Conception Sonore, "Scarpedicemente"</li>
+                    <li><strong>New York Movie Awards (2022)</strong> - Prix d'Octobre pour Meilleure Conception Sonore, "Scarpedicemente"</li>
+                    <li><strong>Florence Film Awards (2022)</strong> - Prix d'Octobre pour Meilleure Conception Sonore, "Scarpedicemente"</li>
+                    <li><strong>Hollywood North Film Awards (2019)</strong> - Gagnant Meilleure Conception Sonore pour "King of Tears"</li>
+                    <li><strong>Independent Shorts Awards (2019)</strong> - Prix Platine pour Meilleure Conception Sonore, "EXT"</li>
+                    <li><strong>Queen Palm International Film Festival (2019)</strong> - Prix Bronze pour Meilleure Conception Sonore, "EXT"</li>
+                    <li><strong>Indie Series Awards (2016)</strong> - Gagnant Meilleure Conception Sonore pour "LARPs"</li>
+                </ul>
+
+                <h3>Nominations Notables</h3>
+                <ul>
+                    <li><strong>FilmHaus: Berlin Film + New Media Competition (2023)</strong> - Meilleure Conception Sonore, "Brightstar"</li>
+                    <li><strong>Lonely Wolf International Film Festival (2023)</strong> - Meilleure Conception Sonore, "Brightstar"</li>
+                    <li><strong>Action on Film International Film Festival (2018)</strong> - Meilleure Conception Sonore, "Past and Future Kings"</li>
+                    <li><strong>International Academy of Web Television Awards (2017)</strong> - Meilleur Son, "LARPs"</li>
+                    <li><strong>Indie Short Fest (2019)</strong> - Prix d'Avril pour Meilleure Conception Sonore, "EXT"</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Formation</h2>
+            <div class="project">
+                <h3>Académie Centennial</h3>
+                <div class="date">Diplômé 2001</div>
+                <p>Batteur Principal dans l'Orchestre de l'École, sous la direction de Denny Christianson (Célèbre Trompettiste de Jazz)</p>
+            </div>
+            <div class="project">
+                <h3>Cégep Vanier, Technologie d'Enregistrement Audio</h3>
+                <div class="date">2008, Formation Continue</div>
+                <p>Certification en Technologie d'Enregistrement Audio</p>
+                <p>Retourné plus tard comme Instructeur Invité (2010-2018) pour enseigner le Son pour Film & Télévision</p>
+            </div>
+        </section>
+
+        <section id="additional-skills">
+            <h2>Compétences Additionnelles</h2>
+            <div class="project">
+                <ul>
+                    <li><strong>Collaboration & Communication:</strong> Compétent dans le travail avec équipes multidisciplinaires, assurant une communication claire des objectifs et livrables, et collaborant sur des solutions répondant aux besoins des clients.</li>
+                    <li><strong>Résolution Créative de Problèmes:</strong> Forte capacité à s'adapter et trouver des solutions créatives en situations de haute pression.</li>
+                    <li><strong>Programmation Audio:</strong> Expertise en programmation audio, incluant l'intégration d'audio spatial, d'effets sonores et de dialogue dans Unreal Engine et autres plateformes.</li>
+                    <li><strong>Intégration IA:</strong> Expérimenté dans l'utilisation de solutions IA pour aspects créatifs (génération d'images) et techniques (génération de code) du développement de jeux.</li>
+                    <li><strong>Adaptabilité:</strong> Apprentissage continu de nouvelles technologies et outils, incluant techniques de programmation IA et audio, pour rester à jour avec les tendances de l'industrie.</li>
+                    <li><strong>Divers:</strong> Étude du Bonsaï avec l'Horticultrice Linda Chicoine du Jardin Botanique de Montréal et le Maître Bonsaï Michele Andolpho. 5e Kyu en Aikido (Art Martial Japonais), 4e Kyu en Iaido (Art du Sabre Japonais).</li>
+                    <li>Ce CV a été entièrement écrit en HTML et CSS, démontrant des compétences pratiques en développement web.</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
